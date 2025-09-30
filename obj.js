@@ -21,7 +21,7 @@ let book = {
     author : "F. Scott Fitzgerald",
     pages : 180,
 }
-console.log(book);
+// console.log(book);
 
 let student = {
     name : "Alice",
@@ -31,5 +31,31 @@ let student = {
         Science : 95
     }
 };
-console.log(student);
-console.log(student.marks.Math);
+// console.log(student);
+// console.log(student.marks.Math);
+
+
+//Mini Task 3: Array of Objects products
+let products = [
+  { id: 1, name: "Laptop", price: 50000 },
+  { id: 2, name: "Smartphone", price: 20000 },
+  { id: 3, name: "Headphones", price: 2000 }
+];
+
+// console.log(products);
+// console.log(products[0].name);   // Laptop
+// console.log(products[2].price); // 2000
+// console.log(products.length); // 3
+//Here, every product is an object, and this entire list is an array of objects.
+
+
+//Mini Task 4: Method introduce()
+let personObj = {
+  name: "Ganesh",
+  age: 20,
+  introduce() {                 //method of the object
+    console.log(`Hi, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+};
+
+personObj.introduce();
